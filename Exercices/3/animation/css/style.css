@@ -1,0 +1,143 @@
+/*-------------GENERAL-------------------*/
+
+
+body {
+	background-color: #afafaf;
+	text-align: center;
+}
+
+div {
+	border: 1px solid black;
+	
+}
+
+#anim, #slide, #fondu, #affich, #delai_Desactiver {
+	width: 60%;
+	height: 500px;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 6px solid black;
+	border-radius: 5px;
+	background-color: white;
+	margin-bottom: 50px;
+}
+
+code {
+	background-color: #343631;
+	color: white;
+	padding: 5px;
+	margin: : 30px;
+	border-radius: 3px;
+}
+
+p {
+	width: 30%;
+	line-height: 30px;
+	background-color: lightgrey;
+	border-radius: 3px;
+}
+
+#part4 {
+	width: auto;
+	text-align: left;
+}
+
+h1 {
+	margin-top: 100px;
+}
+
+/*----------------NAV------------------*/
+
+nav {
+    z-index: 2;
+    top: -7px;
+	position: fixed;
+    width: 100%;
+    background-color: #545454;
+}
+
+nav li {
+    display: inline-block;
+    background-color: #545454;
+    padding: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+nav li:hover {
+    background-color: #afafaf;
+}
+
+nav ul {
+    width: 100%;
+    display: flex; 
+    justify-content: space-around; 
+    padding-left: 0px;
+}
+
+/*---------------------------------------------*/
+
+#bleu, #jaune, #orange, #gris, #noir, #marron, #violet, #pink, #cyan {
+	position: relative;
+	width: 30%;
+	height: 200px;
+}
+
+#vert, #rouge, #pink, #cyan {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
+
+#violet {
+	background-color: purple;
+}
+
+#bleu {
+	background-color: blue;
+}
+
+#jaune {
+	background-color: yellow;
+}
+
+#orange {
+	background-color: orange;
+}
+
+#gris {
+	background-color: grey;
+}
+
+#noir {
+	background-color: black;
+}
+
+#marron {
+	background-color: brown;
+}
+
+#vert {
+	background-color: green;
+}
+
+#rouge {
+	background-color: red;
+}
+
+#pink {
+	background-color: pink;
+}
+
+#cyan {
+	background-color: cyan;
+}
+

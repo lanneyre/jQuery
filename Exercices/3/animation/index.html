@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animations</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav>     
+	    <ul>
+	        <li><a href="#1">Afficher/cacher</a></li>
+	        <li><a href="#2">Fondu</a></li>
+	        <li><a href="#3">Slide</a></li>
+	        <li><a href="#4">Animate</a></li>
+	        <li><a href="#5">Délai/désactiver</a></li>
+	    </ul>
+	</nav>
+
+	<h1>VI. Les animations jQuery</h1>
+
+	<h2 id="1">1 - Afficher, cacher</h2>
+
+	<p>
+		<b><i>show()</i></b> fait apparaître le ou les objets auxquels elle est appliquée tandis que 
+		<b><i>hide()</i></b> le fera disparaitre.<code>$('#maDiv').show('slow');</code><br><code>$('#maDiv').hide('slow');</code>
+	</p>
+
+	<p>
+		Creez une simple animation qui cache et affiche l'élément div à l'appui sur le bouton départ. (Rappel des paramètres de vitesse : 'slow', 'fast' ou millisecondes)
+	</p>
+
+	<button id="depart1">Départ</button> <button class="reload">Reload</button>
+
+	<div id="affich">
+		<div id="violet">
+				
+		</div>
+	</div>
+
+	<hr>
+
+	<h2 id="2">2 - Le fondu</h2>
+
+	<p>
+		<b><i>fadeIn()</i></b> et <b><i>fadeOut()</i></b> agissent toutes deux sur l'opacité de l'élément, la premiere l'affiche, la seconde le fait disparaitre.<br>
+		<code>$('sel').fadeIn('fast');<br>
+		$('sel').fadeOut('slow');
+		</code>
+	</p>
+
+	<p>
+		Creez une animation qui au click sur le bouton départ, fait disparaitre la div #jaune et fait apparaitre et disparaitre un texte blanc dans la div #bleu une fois.
+		La div #orange devra "clignoter" tant que la souris la survol.
+	</p>
+
+	<button id="depart2">Départ</button> <button class="reload">Reload</button>
+	
+	<div id="fondu">
+		<div id="bleu">
+				
+		</div>
+
+		<div id="jaune">
+				
+		</div>
+
+		<div id="orange">
+
+		</div>
+	</div>
+
+	<hr>
+
+	<h2 id="3">3 - Les slides</h2>
+
+	<p>    
+		<b><i>slideDown()</i></b> augmente la hauteur et la largeur de l'élément' jusqu'à atteindre sa dimension « native »
+		<br><br>
+	    <b><i>slideUp()</i></b> diminue la hauteur et la largeur de l' élément jusqu'à ce qu'il disparaisse
+	    <br><br>
+	    <b><i>slideToggle()</i></b> inverse l'animation : si les objets sélectionnés ont une taille nulle, leur hauteur et leur largeur sont augmentées jusqu'à ce qu'ils atteignent leur dimension. Par contre, s'ils ont une taille non nulle, leur hauteur et leur largeur sont diminuées jusqu'à ce qu'ils disparaissent
+	</p>
+
+	<p>
+		Creez une animation qui slideUp la div #noir au click sur départ, slideUp et slideDown la div #gris au clic sur celle-ci, et slideToggle la div #marron au passage de la souris. Essayez de faire réapparaitre la div #marron au click sur la div #gris.
+	</p>
+
+	<button id="depart3">Départ</button> <button class="reload">Reload</button>
+	
+	<div id="slide">
+		<div id="gris">
+				
+		</div>
+
+		<div id="noir">
+				
+		</div>
+
+		<div id="marron">
+
+		</div>
+	</div>
+	
+	<hr>
+
+	<h2 id="4">4 - La méthode animate()</h2>
+	
+	<p id="part4">
+		Ici vous pouvez laisser parler votre imagination, creez une animation de votre choix grace a la methode <b><i>animate()</i></b>. N'oubliez pas, vous pouver chainer deux proprietes pour par exemple deplacer l'element en diagonal avec top et left.<br>
+		Synthax 1 : <code>$('sel').animate({ prop1: val1, prop2: val2, prop3: val3, etc. }, durée, modèle, function() {//Une ou plusieurs instructions});</code> 
+		<br>
+		<br>Synthax 2 : <code>$('sel').animate({ prop1: val1, prop2: val2, prop3: val3, etc. }, {options});</code>
+	</p>
+
+	<button id="depart4">Départ</button><button class="reload">Reload</button>
+
+	<div id="anim">
+		<div id="vert">
+				
+		</div>
+
+		<div id="rouge">
+				
+		</div>
+	</div>
+
+	<hr>
+
+	<h2 id="5">5 - Délai et désactivation</h2>
+
+	<p>
+		Pour desactiver toutes les animations de la page, il suffit d'affecter la valeur true à l'objet jQuery.fx.off : <code>jQuery.fx.off = true;</code><br>
+		<b>Attention</b> ceci ne stop pas les animations en cours d'éxécution. Pour cela utilisez la méthode <b><i>stop()</i></b>.
+	</p>
+
+	<p>Pour les réactiver, affectez la valeur false à l'objet.</p>
+
+	<p>
+		<b><i>delay()</i></b> permet de differer l'execution de l'animation. (dans cet exemple le delai est en milisecondes.)
+		<br><code>$('#message').fadeIn('slow').delay(2000).fadeOut('slow');</code>
+	</p>
+
+	<p>
+	Creez une animation et utilisez les boutons depart et arret en jquery pour démarrer et désactiver l'animation.</p>
+
+	<p>Ajouter un delai a votre animation.</p>
+	
+	<button id="depart5">Départ</button> <button id="desactiver">Arret</button><button class="reload">Reload</button>
+	
+	<div id="delai_Desactiver">
+		<div id="pink">
+				
+		</div>
+
+		<div id="cyan">
+				
+		</div>
+	</div>
+	
+
+<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

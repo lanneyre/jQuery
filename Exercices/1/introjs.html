@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Manipuler le DOM en jQuery - 1</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.wrapper{
+			min-height: 100%;
+			width: 100%;
+		}
+		.division{
+			padding: 10px;
+			border: 1px solid blue;
+		}
+		.col50{
+			width: calc(50% - 20px);
+		}
+		.col100{
+			width: calc(100% - 20px);
+			margin-top: 20px;
+			box-shadow: 0 0 6px black;
+		}
+		.notype{
+			list-style-type: none;
+		}
+		.nopad{
+			padding-left:0;
+		}
+		.bgvert{
+			background-color: #19BC56;
+		}
+		.bgred{
+			background-color: #F35D5D;
+		}
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="division col50">
+		<a href="https://fr.lipsum.com/" class="extlink" id="extlink">Lorem Ipsum</a>
+		<p>
+			
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			
+		</p>
+		<a href="http://google.fr" class="extlink" id="w3">w3schools</a>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+	</div>
+
+	<div class="division col100">
+
+		<button class="btnjs" id="test" onclick="changement()">Test</button>
+		<button class="btnjs" id="test2" onclick="changementTwo()">Test2</button>
+		<input type="text" name="testeur" id="testeur" onkeyup="superfonction()">
+		<br>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ul>
+
+	</div>
+</div>
+<div class="exo">
+	<p>
+		Exercice évolutif. Vous ne devez travailler que sur le fichier js, sans rien modifier au fichier HTML.
+		<ol>
+			<li>Lorsque je clique sur le bouton Test, la liste située sous le premier paragraphe n'a plus de puce. (Uniquement cette liste, pas la deuxième !)</li>
+			<li>En utilisant un IF, faites en sorte qu'à chaque fois que l'on clique sur le bouton Test les puces s'enlèvent ou se mettent en fonction de leur état actuel.</li>
+			<li>Le bouton Test2 doit retirer ou mettre les puces sur les DEUX listes en fonction de leur état actuel.</li>
+			<li>Le bouton Test2 doit supprimer ou ajouter les puces en foonctions de l'état de chaque liste. Pour la liste 1 il doit uniquement mettre ou enlever les puces. Pour la liste 2 il doit enlever les puces ET enlever le padding-left, ou l'inverse.</li>
+			<li>En utilisant un switch <br />
+				Lorsque vous rentrez le mot oui (ou o, peut importe la casse), les deux div se retrouvent avec un fond vert clair. <br />
+				Lorsque vous rentrez le mot non (ou n, peut importe la casse), les deux div se retrouvent avec un fond rouge clair. <br />
+				Lorsque vous rentrer une suite de [10-20]caractères alors ce texte se retrouve à la place du lorem ipsum. Lorsque ce n'est plus le cas, le lorem ipsum doit revenir <br />
+				Lorsque vous rentrez moins de 10 caractère, que vous commencez par une majuscule et que vous finissez par un chiffre, alors le contenu du lien en haut de page devient "Wikipédia : la saisie" et le lien devra renvoyer vers une recherche Wikipédia concernant votre saisie.</li>
+			<li>Bonus : corriger l'adresse à laquelle renvoie le lien w3school.</li>
+		</ol>
+	</p>
+	
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="introjs.js"></script>
+</body>
+</html>
+
+

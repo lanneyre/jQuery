@@ -1,0 +1,25 @@
+div {
+    background-color: red;
+    border : solid black 2px;
+    min-height: 10px;
+}
+p {
+    margin: 0 0 0 10px;
+    border: solid 1px;
+    background-color: blue;
+    color: white;
+    min-height: 10px;
+}
+ul {
+    margin: 0 0 0 10px;
+    background-color: white;
+    min-height: 10px;
+}
+li {
+    margin: 0 0 0 10px;
+    background-color: green;
+    min-height: 10px;
+}
+button{
+    background-color: none;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title> Les Evenements </title>
+	<meta name="description" content="Description du site">
+	<meta name="viewport" content="width=device-width,initial-scale=1">	
+	
+	<style type="text/css">
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+		width: 80%;
+		margin: 0 auto;
+		background-color: #f1f2f6;
+		padding: 15px;
+	}
+	h1{
+		text-align: center;
+	}
+	h2{
+		padding: 20px;
+	}
+	#bloc1{
+		width: 150px;
+		height: 150px;
+	}
+	.vert{
+		background-color: #20bf6b;
+	}
+	.bleu{
+		background-color: #2d98da;
+	}
+	.rouge{
+		background-color: #e74c3c;
+	}
+	#para1{
+		background-color: #d1d8e0;
+	}
+	.bloc2{
+		display: inline-block;
+		border: 1px solid black;
+		width: 150px;
+		height: 150px;
+		font-size: 20px;
+		font-weight: bold;
+		text-align: center;
+		margin: 20px;
+		line-height: 150px;
+	}
+	#result{
+		width: 250px;
+		height: 350px;
+	}
+	button{
+
+		background-color: #34495e;
+		color: #ecf0f1;
+		padding: 10px 30px;
+	}
+</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<h1>Les Evenements</h1>
+		<h2>Exercice 1 : </h2>
+		<p>Grâce à Jquery, changez la couleur du carré vert en bleu lorsque la souris rentre dedans puis le remettre en vert lorsque la souris en sort.</p>
+		<div id="bloc1" class="vert"></div>
+		<h2>Exercice 2 : </h2>
+		<p>Grâce à Jquery, faites en sorte que le texte tapé dans le champs ci-dessous soit repporté "en live" dans le paragraphe ayant l'id para1</p>
+		<input type="text" name="champ1" id="champ1"><p id="para1">le texte doit s'afficher ici</p>
+		<h2>Exercice 3 (boss final) : </h2>
+		<p>Les carrés ci-dessous présentent chacuns soit des nombres , pairs et impairs, soit des chaines de caractere.<br>
+			Premiere étape : en Jquery, faites en sorte que quand le pointeur de la souris passe au dessus d'un carré , le comportement suivant soit déclenché :<br>
+			Si le nombre est pair, le carré devient <span class="vert">vert</span>(vous pouvez utiliser la classe déja disponible).<br>
+			Si le nombre est impair, le carré devient <span class="rouge">rouge</span>(vous pouvez utiliser la classe déja disponible).<br>
+			Si c'est une chaine de caractères, le carré devient <span class="bleu">bleu</span>(vous pouvez utiliser la classe déja disponible).<br>
+		</p>
+		<div class="bloc2">1</div>
+		<div class="bloc2">2</div>
+		<div class="bloc2">A</div>
+		<div class="bloc2">56</div>
+		<div class="bloc2">Simplon</div>
+		<div class="bloc2">73</div>
+		<br>
+
+		<h2>Exercice 3 (boss final:p2) : </h2>
+		<p>Dernière phase : Faites en sorte que quand le bouton "Afficher tout" est cliqué, les informations concernant le contenu des carrés sont affichées dans le paragraphe ayant l'id result....Une seule fois(des clics supplémentaires ne font rien)<br>
+		exemple : 1 = impair ; 2 = pair, A = chaine de caractères, etc... </p>
+		<button id="btn">Afficher tout</button>
+		<p id="result"></p>
+	</div>
+
+
+	<script>
+		$( document ).ready(function() {
+    		// Tapez votre code Jquery ici
+    		
+    	
+	    	});
+		
+    </script> <!-- JS -->
+</body>
+</html>
+
